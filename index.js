@@ -3,11 +3,17 @@ const addTodoForm = document.querySelector('.add-todo');
 
 function renderTodo(todo) {
 	const liElement = document.createElement('li');
+	const deleteBtnEl = document.createElement('button')
+
+	deleteBtnEl.setAttribute('class', 'delete-btn');
+
 	liElement.innerText = todo.title;
+	deleteBtnEl.innerText = 'Delete';
 	if (todo.completed) {
 		liElement.setAttribute('class', 'completed');
 	}
 	todoList.append(liElement);
+	liElement.append(deleteBtnEl);
 }
 
 function renderTodoList(todos) {
