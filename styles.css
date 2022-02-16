@@ -11,3 +11,19 @@ body {
   text-decoration: line-through;
   color:grey;
 }
+
+div {
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(255, 78, 78);
+}
+
+li {
+  line-height: 2;
+  font-size: 1.5rem;
+}
